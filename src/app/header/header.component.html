@@ -1,0 +1,37 @@
+
+<mat-toolbar color="secundary">
+  <div class="container" [class.open]="mostrarMenu">
+    
+    <!-- Barra lateral -->
+    <div class="sidebar">
+      <!-- Contenido del menú -->
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Shiba Inu</mat-card-title>
+          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+      <ul>
+        <a routerLink="/pokemon-table" routerLinkActive="active-link">Dashboard</a><br>
+        <a routerLink="/pokemon-list-component" routerLinkActive="active-link">Pokemons</a><br>
+        <a href="">Usuarios</a>
+        <!-- Agrega más enlaces según sea necesario -->
+      </ul>
+    </div>
+    
+    <!-- Contenido principal de la página -->
+    <div class="main-content">
+      <!-- Contenido principal de la página aquí -->
+    </div>
+  </div>
+  <button (click)="toggleMenu()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>PokeAPI</span>
+  <span class="example-spacer"></span>
+  <button routerLink="/login" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>logout</mat-icon>
+  </button>
+ 
+</mat-toolbar>
